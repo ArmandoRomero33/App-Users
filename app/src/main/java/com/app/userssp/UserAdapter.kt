@@ -27,7 +27,7 @@ class UserAdapter (private val users:List<User>, private val listener: OnClickLi
 
 
         with(holder){
-            setListener(user, position)
+            setListener(user, position + 1)
             binding.tvOrder.text = (position + 1).toString()
             binding.tvName.text = user.getFullName()
             Glide.with(context)
